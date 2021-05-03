@@ -25,7 +25,7 @@ public class Main {
 		UserManager userManager=new UserManager(mernisyeni,logger);
 		GameManager gameManager=new GameManager(logger);
 		CampaignManager campaignManager=new CampaignManager();
-		User user1=new User(1,"Kamil","Þahin","alihocaoglu@gmail.com","123456","19336849238",1986);
+		User user1=new User(1,"Ali","Hocaoglu","alihocaoglu@gmail.com","123456","12345556312",1986);
 		Game game1=new Game(1,"CS:GO",50,"1.png","Fps oyunu 8 GB ram gerekli");
 		Game game2=new Game(2,"BF 5",130,"2.png","Savaþ oyunu 4 GB ram gerekli");
 		Campaign baharKampanyasi=new Campaign(1,"Bahar",20);
