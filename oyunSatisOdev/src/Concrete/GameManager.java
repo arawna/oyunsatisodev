@@ -34,4 +34,17 @@ public class GameManager implements GameService {
 		
 	}
 
+	@Override
+	public void rebase(User user, Game game) {
+		List<Game> liblary=user.getLibrary();
+		if(liblary.contains(game)) {
+			liblary.remove(liblary.indexOf(game));
+			logger.addMoney(user, game.getPrice()-5);
+			System.out.println(user.getFirstName()+" "+game.getName()+" Oyununu 5TL kesinti ile iade ettiniz hesabiniza "+(game.getPrice()-5)+"TL eklendi");
+		}
+		else {
+			System.out.println(user.getFirstName()+" "+game.getName()+" Oyununa sahip deðilsiniz");
+		}
+	}
+
 }

@@ -57,8 +57,10 @@ public class Main {
 		gameManager.buy(user1, game2);
 		userManager.showLiblary(user1);
 		
-		
-
+		userManager.showMoney(user1);
+		gameManager.rebase(user1, game1);
+		userManager.showMoney(user1);
+		userManager.showLiblary(user1);
 	}
 
 }
