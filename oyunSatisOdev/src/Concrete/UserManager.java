@@ -1,5 +1,6 @@
 package Concrete;
 
+import java.rmi.RemoteException;
 import java.util.List;
 
 import Abstract.LoggerService;
@@ -19,7 +20,7 @@ public class UserManager implements UserService {
 	}
 
 	@Override
-	public void register(User user) {
+	public void register(User user) throws RemoteException {
 		if(validationManager.validateUser(user)) {
 			System.out.println(user.getFirstName()+" Kayýt baþarý ile yapýldý");
 			logger.addUser(user);

@@ -12,7 +12,7 @@ public class User {
 	private String email;
 	private String password;
 	private String nationalNumber;
-	private Date dateOfBirth;
+	private int yearOfBirth;
 	private int wallet=0;
 	private List<Game> library=new ArrayList<Game>();
 
@@ -20,7 +20,7 @@ public class User {
 
 	}
 
-	public User(int id, String firstName, String lastName, String email,String password, String nationalNumber, Date dateOfBirth) {
+	public User(int id, String firstName, String lastName, String email,String password, String nationalNumber, int yearOfBirth) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -28,7 +28,7 @@ public class User {
 		this.email = email;
 		this.password=password;
 		this.nationalNumber = nationalNumber;
-		this.dateOfBirth = dateOfBirth;
+		this.yearOfBirth = yearOfBirth;
 	}
 
 	public int getId() {
@@ -79,12 +79,12 @@ public class User {
 		this.nationalNumber = nationalNumber;
 	}
 
-	public Date getDateOfBirth() {
-		return dateOfBirth;
+	public int getYearOfBirth() {
+		return yearOfBirth;
 	}
 
-	public void setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
+	public void setDateOfBirth(int yearOfBirth) {
+		this.yearOfBirth = yearOfBirth;
 	}
 
 	public int getWallet() {
